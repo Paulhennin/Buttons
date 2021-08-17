@@ -8,6 +8,7 @@ import GradientButtons from '../GradientButtons';
 import PixelsButtons from '../PixelsButtons';
 import CornerSnakeButtons from '../CornerSnakeButtons';
 import LightNeonButtons from '../LightNeonButtons';
+import PaintImgButtons from '../PaintImgButtons';
 
 // == Import
 import './styles.css';
@@ -23,6 +24,7 @@ const App = () => (
     <GradientButtons />
     <PixelsButtons />
     <LightNeonButtons />
+    <PaintImgButtons />
   </>
 );
 
