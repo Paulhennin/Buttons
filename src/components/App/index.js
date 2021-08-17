@@ -9,6 +9,7 @@ import PixelsButtons from '../PixelsButtons';
 import CornerSnakeButtons from '../CornerSnakeButtons';
 import LightNeonButtons from '../LightNeonButtons';
 import PaintImgButtons from '../PaintImgButtons';
+import CornerLineButtons from '../CornerLineButtons';
 
 // == Import
 import './styles.css';
@@ -25,6 +26,7 @@ const App = () => (
     <PixelsButtons />
     <LightNeonButtons />
     <PaintImgButtons />
+    <CornerLineButtons />
   </>
 );
 
