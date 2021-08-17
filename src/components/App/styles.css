@@ -1,0 +1,8 @@
+.section {
+  background-color: #16a085;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
