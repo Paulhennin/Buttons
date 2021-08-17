@@ -1,0 +1,45 @@
+.section-3 {
+  background-color: #041A2F !important;
+}
+
+
+.btn-ripple {
+  position: relative;
+  display: inline-block;
+  padding: 12px 36px;
+  margin: 20px;
+  text-transform: uppercase;
+  overflow: hidden;
+  border-radius: 5px;
+  background: linear-gradient(-45deg, #A17D06, rgba(255,255,255,0));
+  background-color: #9B27A1;
+  transition: background-color 0.5s;
+  &-2 {
+    background: linear-gradient(-45deg, rgba(255,255,255,0), #ED8909);
+    background-color: #ED3949;
+  }
+  &:hover {
+    background-color: red;
+
+  }
+  & span {
+    position: absolute;
+    background-color: white;
+    transform: translate(-50%,50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+  }
+}
+
+@keyframes animate {
+  0% {
+    width: 1px;
+    height: 1px;
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(800, 500);
+  }
+}
