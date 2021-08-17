@@ -1,0 +1,55 @@
+.section-6 {
+  background-color: rgb(29, 15, 63) !important;
+  flex-direction: row !important;
+}
+
+.btn-gradient {
+  transform: translate(-50%,-50%);
+  position:absolute;
+  left: 50%;
+  margin: 20px;
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  color: white;
+  text-transform: uppercase;
+  background: linear-gradient(60deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400px;
+  border-radius: 5px;
+  z-index: 1;
+  &:hover {
+    animation: gradient 4s linear infinite;
+  }
+  &:before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px; 
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(60deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  &:hover:before{
+    filter: blur(10px);
+    opacity: 1;
+    animation: gradient 4s linear infinite;
+
+  }
+}
+
+@keyframes gradient {
+  0%
+  {
+    background-position: 0%;
+  }
+  100%
+  {
+    background-position: 400%;
+  }
+}

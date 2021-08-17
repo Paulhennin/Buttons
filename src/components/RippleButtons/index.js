@@ -7,7 +7,7 @@ export default function RippleButtons() {
   const [clickbtn, setClickbtn] = useState(false);
 
   useEffect(() => {
-    const btns = document.querySelectorAll('.btn-ripple')
+    const btns = document.querySelectorAll('.btn-ripple');
     btns.forEach((btn) => {
       btn.addEventListener('click', (e) => {
         const x = e.pageX - e.target.offsetLeft;
