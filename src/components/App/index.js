@@ -5,9 +5,9 @@ import LoadButtons from '../LoadButtons';
 import RippleButtons from '../RippleButtons';
 import SnakeButtons from '../SnakeButtons';
 import GradientButtons from '../GradientButtons';
+import PixelsButtons from '../PixelsButtons';
 
 // == Import
-import reactLogo from './react-logo.svg';
 import './styles.css';
 
 // == Composant
@@ -18,6 +18,7 @@ const App = () => (
     <RippleButtons />
     <SnakeButtons />
     <GradientButtons />
+    <PixelsButtons />
   </>
 );
 

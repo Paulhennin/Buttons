@@ -1,0 +1,40 @@
+.section-7{
+  background-color: #111 !important;
+}
+
+.btn-pixels {
+  position: relative;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  margin: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  transition: 0.5s;
+  border: 1px solid #ec0b36;
+  &:hover {
+    background: #ec0b36 url(pixel.png);
+    background-size: 200px;
+    transition-delay: 0.8s;
+    animation: pixelize 0.8s steps(8) forwards;
+  }
+  &-2 {
+    border: 1px solid #6d0bdf;
+    &:hover {
+      background: #6d0bdf url(pixel2.png);
+      transition-delay: 0.8s;
+      background-size: 200px;
+      animation: pixelize 0.8s steps(8) forwards;
+    }
+  }
+  
+}
+
+@keyframes pixelize {
+  0% {
+    background-position-y: 0;
+  }
+  100%{
+    background-position-y: -480px;
+  }
+}
