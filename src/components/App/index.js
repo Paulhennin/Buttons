@@ -6,6 +6,8 @@ import RippleButtons from '../RippleButtons';
 import SnakeButtons from '../SnakeButtons';
 import GradientButtons from '../GradientButtons';
 import PixelsButtons from '../PixelsButtons';
+import CornerSnakeButtons from '../CornerSnakeButtons';
+import LightNeonButtons from '../LightNeonButtons';
 
 // == Import
 import './styles.css';
@@ -16,9 +18,11 @@ const App = () => (
     <NeonButtons />
     <LoadButtons />
     <RippleButtons />
+    <CornerSnakeButtons />
     <SnakeButtons />
     <GradientButtons />
     <PixelsButtons />
+    <LightNeonButtons />
   </>
 );
 
